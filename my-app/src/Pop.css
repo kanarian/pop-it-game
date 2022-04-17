@@ -1,0 +1,10 @@
+.Pop{
+    height: 70px;
+    width: 70px;
+    border: 1px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    display: inline-block;
+    cursor: pointer;
+}
