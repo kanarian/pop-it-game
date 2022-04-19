@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       Pop-it Game
+       <h1>Pop-it Game!</h1>
        <div className = "body">
        <Board></Board>  
        </div>

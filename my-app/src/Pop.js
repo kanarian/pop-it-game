@@ -1,18 +1,13 @@
 import './Pop.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
-function Pop({rowindex, columnindex, callBack}){
-    // const [clickable,setClickable] = useState(false);
-    // const [popped,setPopped] = useState(true);
-    const [selected, setSelected] = useState(false)
-
-    // console.log("row index is "+rowindex+"col index is "+columnindex+" selected?: "+selected)
-
+function Pop({rowindex, columnindex, selected, popped, callBack}){
     return(
-        <div className = "Pop" rowindex = {rowindex} columnindex = {columnindex} onClick = {() => callBack({rowindex,columnindex})}>
-            {/* row = {rowindex} col = {columnindex} */}
-            hi
+        <div className = "Pop" rowindex = {rowindex} columnindex = {columnindex} 
+        popped = {popped.toString()} sel = {(selected && !popped).toString()} 
+        onClick = {() => callBack({rowindex,columnindex})}>
+            {popped.toString()}
         </div>
     )
 }

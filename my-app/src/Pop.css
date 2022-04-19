@@ -8,3 +8,11 @@
     display: inline-block;
     cursor: pointer;
 }
+
+.Pop[popped|="true"]{
+    background-color: grey;
+}
+
+.Pop[sel|="true"]{
+    border-color: red;
+}
