@@ -66,7 +66,7 @@ function Board(){
     }
 
     return(
-        <div className = "Board-container">
+        <div className = "boardContainer">
             <div><h2>{winner == 0 ? gameState.userIsNext ? 'Your Turn!': 'Opponents Turn!' : winner == 1 ? 'You won!' : 'You lost'}</h2></div>
             <div className = "Board">
                 {[...new Array(rowCount)].map((x, rowindex) => {
