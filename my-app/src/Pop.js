@@ -7,7 +7,6 @@ function Pop({rowindex, columnindex, selected, popped, callBack}){
         <div className = "Pop" rowindex = {rowindex} columnindex = {columnindex} 
         popped = {popped.toString()} sel = {(selected && !popped).toString()} 
         onClick = {() => callBack({rowindex,columnindex})}>
-            {popped.toString()}
         </div>
     )
 }

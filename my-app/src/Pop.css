@@ -5,8 +5,11 @@
     border-radius: 50%;
     border-style: solid;
     border-color: white;
-    display: inline-block;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
 }
 
 .Pop[popped|="true"]{
