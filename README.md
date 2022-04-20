@@ -12,3 +12,5 @@ The game is simple and has the following ruleset:
 </ol>
 
 This can be regarded as a version of the game of Nim.
+
+I made a small web-app in which you can play against the algorithm and try to win :-)
