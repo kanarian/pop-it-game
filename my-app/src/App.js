@@ -1,5 +1,6 @@
 import './App.css';
 import Board from './Board';
+var { SocialIcon } = require('react-social-icons');
 
 function App() {
   return (
@@ -10,6 +11,11 @@ function App() {
        <Board></Board>  
        </div>
       </header>
+      <body>
+        <p>
+          This app was created by Arian Joyandeh <SocialIcon url="https://www.linkedin.com/in/arian-joyandeh-759079178/" style={{ height: 25, width: 25 }} bgColor="#282c34" /> 
+        </p>
+      </body>
     </div>
   );
 }

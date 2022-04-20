@@ -38,7 +38,3 @@ function IsOnlyOnePopLeft(stacks){
     }
     return ones == 1;
 }
-
-export function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }

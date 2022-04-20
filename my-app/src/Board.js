@@ -1,7 +1,6 @@
 import Pop from './Pop';
 import React, { useState, useEffect } from 'react';
-import { calculateWinner, optimalMove, sleep } from './util';
-
+import { calculateWinner, optimalMove } from './util';
 
 function Board(){
     const rowCount = 5;
@@ -82,7 +81,7 @@ function Board(){
                     )
                 })
                 }
-                <button onClick = {gameState.userIsNext && winner == 0 ? () => updateBoard({selectedRow,selectedColumns}) : () => {}}> Pop it! </button>
+                <button className = 'popButton' onClick = {gameState.userIsNext && winner == 0 ? () => updateBoard({selectedRow,selectedColumns}) : () => {}}> Pop it! </button>
             </div>
         </div>
     )

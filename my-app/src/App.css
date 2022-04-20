@@ -40,3 +40,18 @@
 .boardRow {
   display: flex;
 }
+
+.popButton{
+  width:100px;
+  height:50px;
+  margin: 20px;
+  background-color: transparent;
+  border: none;
+  border: 0.5px solid white;
+  color: white;
+  cursor: pointer;
+}
+.popButton:hover{
+  background-color: white;
+  color: #282c34;
+}

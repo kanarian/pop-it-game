@@ -1,1 +1,5 @@
-{}
+{
+  "dependencies": {
+    "react-social-icons": "^5.13.0"
+  }
+}
