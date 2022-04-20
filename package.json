@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "react-social-icons": "^5.13.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
