@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { calculateWinner, optimalMove } from './util';
 
 function Board(){
-    const rowCount = 5;
+    const rowCount = 4;
     const colCount = 5;
     const [selectedRow, setSelectedRow] = useState(-1);
     const [selectedColumns,setSelectedColumns] = useState([]);
@@ -34,6 +34,7 @@ function Board(){
 
     const makeOpponentMove = () => {
         const optMove = optimalMove(gameState.gameArray)
+        console.log(optMove)
         if (optMove !== undefined){
             const selectedRow = optMove[0]
             const popsOptMove = optMove[1]
@@ -42,7 +43,7 @@ function Board(){
             // timeout to simulate the opponent thinking
             setTimeout(() => {
                 updateBoard({selectedRow,selectedColumns})
-            },2000);
+            },1500);
         }
     }
 
